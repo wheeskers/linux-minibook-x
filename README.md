@@ -47,6 +47,12 @@ Since Linux 6.6.15 the display output is broken. It looks like a hardware issue 
 
 A kernel patch is available at https://gitlab.freedesktop.org/drm/intel/-/issues/10334
 
+Should be fixed by this commit related to the issue:
+- `https://github.com/torvalds/linux/commit/18846627ef1210dcd55d65342b055ea97a46ffff`
+
+Arch kernel sources fork includes these changes at `6.8.3-arch1` tag:
+- `https://github.com/archlinux/linux/blob/v6.8.3-arch1/drivers/gpu/drm/i915/display/icl_dsi.c`
+
 ### Orientation
 
 The "physicial" screen orientation is incorrect. You can fix it in` the display settings by changing the orientation to "Portrait Right" but that will only work once post boot.
